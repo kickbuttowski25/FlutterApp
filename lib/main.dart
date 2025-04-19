@@ -7,11 +7,23 @@ void main() {
         body: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.teal, Colors.blueAccent, Colors.cyanAccent],
+              colors: [
+                Colors.teal,
+                Colors.blueAccent,
+                Colors.cyanAccent,
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
             ),
           ),
           child: const Center(
-            child: Text('Hello World!'),
+            child: Text(
+              'Hello World!',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 24,
+              ),
+            ),
           ),
         ),
       ),
