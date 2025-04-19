@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/styled_text.dart';
+// import 'package:flutter_app/styled_text.dart';
+import 'package:flutter_app/roll_dice.dart';
 
 //var startAlignment;
 // Alignment? startAlignment;
@@ -8,6 +9,12 @@ var endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key, required this.colors});
+  // GradientContainer.purple({super.key})
+  //     : colors = [
+  //         Colors.black,
+  //         Colors.black12,
+  //       ];
+
   final List<Color> colors;
 
   @override
@@ -20,8 +27,8 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: const Center(
-        child: StyledText('This is the custom text widget'),
+      child: Center(
+        child: RollDice(),
       ),
     );
   }
